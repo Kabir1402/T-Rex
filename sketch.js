@@ -169,7 +169,7 @@ score = 0;
 function spawnObstacles(){
  if (frameCount % 60 === 0){
    var obstacle = createSprite(600,165,10,40);
-   obstacle.velocityX = -(6 + score/100);
+   obstacle.velocityX = -(4 + 3* score/100);
    
     //generate random obstacles
     var rand = Math.round(random(1,6));
